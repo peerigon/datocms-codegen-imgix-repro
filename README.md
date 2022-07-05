@@ -2,10 +2,10 @@
 
 ## Description
 
--   We generate typescript types from Dato's GQL schema
--   We use the new `X-Exclude-Invalid` header in conjunction with `avoidOptionals` to stricten the types
+-   We generate typescript types and a request SDK from Dato's GQL schema using `graphql-codegen`, `typescript-operations` and `typescript-graphql-request`
+-   In order to have stricter types we use the new `X-Exclude-Invalid` header in conjunction with `avoidOptionals`
 
-=> The type for `ImgixParams` is too strict, since all of the properties that are possible as imgix params are resolved as required.
+→ **Result:** The type for `ImgixParams` is too strict, since all of the properties that are possible as imgix params are resolved as required.
 
 ## Reproduce
 
