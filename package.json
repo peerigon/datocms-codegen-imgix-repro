@@ -1,0 +1,19 @@
+{
+	"name": "datocms-codegen-imgix-repro",
+	"version": "1.0.0",
+	"scripts": {
+		"build": "graphql-codegen",
+		"test": "tsc --noEmit"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@graphql-codegen/add": "^3.1.1",
+		"@graphql-codegen/cli": "^2.7.0",
+		"@graphql-codegen/typescript": "^2.6.0",
+		"@graphql-codegen/typescript-graphql-request": "^4.4.11",
+		"@graphql-codegen/typescript-operations": "^2.4.3",
+		"typescript": "^4.7.4"
+	}
+}

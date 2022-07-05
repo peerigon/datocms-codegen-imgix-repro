@@ -1,0 +1,21 @@
+fragment ResponsiveImageFragment on ResponsiveImage {
+	__typename
+	aspectRatio
+	alt
+	base64
+	height
+	sizes
+	src
+	srcSet
+	title
+	webpSrcSet
+	width
+}
+
+query getThumbnails($thumbnailImgix: ImgixParams!) {
+	allUploads {
+		responsiveImage(imgixParams: $thumbnailImgix) {
+			...ResponsiveImageFragment
+		}
+	}
+}
